@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Фронт для кнопки</title>
+  <style>
+    body { margin: 0 }
+    img { width: 100%; height: auto }
+    .test-container { max-width: 1000px; margin: 0 auto }
+    .test-article { height: 1500px; background: pink }
+    .test-mini { height: 250px; background: #0bf }
+  </style>
+</head>
+
+<body>
+
+  <div class="test-container">
+
+    <div class="test-mini"></div>
+
+    <div class="topArticlesListImage">
+      <img src="https://placehold.it/600x400" class="target">
+    </div>
+
+    <div id="content">
+      <p class="test-article"></p>
+    </div>
+
+    <div class="test-article">Тест на конец документа</div>
+
+  </div>
+
+
+  <script src="https://showroom.renault.ru/vitrines/static/js/embed.js" async></script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script>
+    window.RenaultShowroom = window.RenaultShowroom || [] // renault-showroom
+    window['Lx_model'] = 'duster' // renault-showroom model
+    //supported params: kaptur, koleos, logan, sandero, sandero-stepway, duster, megane
+    window['Ga_id'] = 'UA-10148710-22' // ga trackId
+    window.ga = window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date() // ga
+  </script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
